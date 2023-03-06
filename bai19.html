@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        /* padding: 0; */
+        list-style: none;
+        /* background-color: brown; */
+        color: #fff;
+        text-align: center;margin: 10px;
+        /* padding: 10px; */
+        margin: 0;
+        /* border: 3px dotted #fff; */
+        display: inline-block;
+    }
+    .ez{
+        padding: 11px;
+    }
+    .on{
+        padding: 11px;
+    }
+    li:hover{
+        background-color: greenyellow;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .ok{
+
+        position: absolute;
+    background-color: #CCC;
+    width: 127px;
+    top: 35px;
+    display: none;
+    left: 0px;
+    box-shadow: 0 0 3px #000;
+    }
+    .on:hover .ok{
+        display: block;
+    }
+    .ok li:hover{
+        background-color: #45bf00;
+    }
+    .ok li{
+        padding: 10px;
+    /* padding: 0 29px; */
+    display: block;
+    }
+    </style>
+</head>
+<body>
+    
+   <div style="    padding: 1px 11px;
+   box-shadow: 0 0 10px #000;
+   width: 494px;">
+    <ul style="        width: 447px;
+    background-color: #000;text-align: center;">
+        <li class="ez">Home</li>
+        <li class="ez">Introduction>> </li>
+        <li class="on">Portfolio  >>
+            <ul class="ok">
+            <li>Engineering </li>
+            
+            <li>Telecom </li>
+            <li>Energy </li>
+            <li>Finance </li>
+            <li>Consultance </li>
+            </ul>
+        </li>
+        <li class="ez">News</li>
+    
+        <li class="ez"> Contact</li>
+        
+    </ul>
+   </div>
+</body>
+</html>
