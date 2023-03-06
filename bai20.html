@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    li{
+        list-style: none;
+    }
+    .ez{
+        list-style: none;
+        background-color: aqua;
+        width: 80px;
+        text-align: center;margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px dotted #fff;
+        position: relative;
+        /* display: inline-block; */
+    }
+
+    .oki{
+        position: absolute;
+    left: 57px;
+    display: none;
+    top: -13px;
+    }
+    .oki li{
+        list-style: none;
+        background-color: aqua;
+        width: 80px;
+        text-align: center;margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px dotted #fff;
+        position: relative;
+    }
+    .okad:hover .oki{
+        display: block;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li class="ez">Home</li>
+        <li class="ez">Services </li>
+        <li class="ez okad">Products
+            <ul class="oki">
+                <li>
+                    Photogaphy
+                </li>
+                <li>
+                     
+                            Web & User 
+                            InterFace
+                            Design
+                        
+                </li>
+                <li>
+                    Illutration 
+                </li>
+                 
+            </ul>    
+        </li>
+        <li class="ez">Contact</li>
+    </ul>
+</body>
+</html>
